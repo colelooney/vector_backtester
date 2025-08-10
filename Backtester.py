@@ -80,9 +80,9 @@ class VectorizedBacktester:
 
     def _load_data_csv(self):
         """
-        Loads historical data from a CSV file.
+        Loads historical data from a CSV file. Used for ease of testing
         """
-        data = pd.read_csv(r"C:\Users\colel\OneDrive\Documents\[03] Professional\Projects\HSI_Prices.csv")
+        data = pd.read_csv()
         return data
     
     def run(self,strategy_object):
@@ -180,4 +180,5 @@ if __name__ == '__main__':
     backtester.run(momentum_strategy)
     backtester.plot_results(momentum_strategy)
     backtester.calculate_metrics()
+
 
